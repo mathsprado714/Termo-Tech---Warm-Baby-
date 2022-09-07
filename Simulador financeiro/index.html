@@ -1,0 +1,84 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div class="header">
+        <div class="container">
+            <img src="logoProjetoTermometro.png" width="2%">
+            <span class="nomeEmpresa">TERMOTECH</span>
+            <ul class="menu">
+                <li>Quem Somos</li>
+                <li>Serviços</li>
+                <li>Como Funciona</li>
+                <li>Contato</li>
+                <li><button class="buttonLogin">Login</button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="geral">
+        <div class="informacoes">
+            <p>Menos de 20% dos recem nascidos tem um parto normal, o que acaba fazendo com que +- 80% dos bebes ficam
+                no hospital durante mais tempo que o esperado no pós-parto, o tempo acaba variando dependendo da gravidade
+                do problema do bebe, causando despesas a mais que o esperado. Entretanto, manter o RN aquecido após o 
+                nascimento continua a ser um problema frequente nos serviços de neonatologia em todo o mundo.
+                Estudo realizado por Almeida et al.,8 da Rede Brasileira de Pesquisas Neonatais, observou hipotermia
+                em 44% dos RN com idade gestacional entre 23 e 33 semanas na sala de parto e em 51% na admissão na UTIN.</p>
+        </div>
+        <div class="corpo">
+             <h1 class="titulo">SIMULADOR FINANCEIRO</h1>
+                
+                <!-- <span class="subtitulo">:</span> <br><br> <input type="text" id="in_nome"><br><br> -->
+            <span class="subtitulo"> Número de dias que o bebê passou na UTI:</span><br><br>
+            <br><input type="text" id="in_dias"><br><br>
+
+            <button onclick="calcular()" class="calcular">SIMULAR</button><br><br>
+
+            <div id="div_mensagem" class="div_mensagem">
+
+            </div>
+
+            <hr>
+            
+            <h1 class="titulo">PROFISSIONAIS - GASTOS EXTRAS</h1>
+            <ul class="dados">
+                <li> |Médico pediatra média salarial: 6,820 <br></li>
+                <li> |Enfermeiro média salarial: 4,228 <br></li>
+                <li> |Técnico Enfermagem média salarial: 1,874 <br></li>
+            </ul>
+            <br>
+        </div>
+        <div class="informacoes2">
+            <p>Depende do desenvolvimento do corpinho de cada bebê. Se ele for do grupo que nasceu com idade gestacional acima de 34 semanas, pode ficar de três dias a até uma ou duas semanas se não tiver nada muito grave. Para os bebês de prematuridade moderada, depende muito, pois eles precisam estar sem oxigênio, mamar bem, não esquecer de respirar, não ter nenhuma doença para tratar e atingir pelo menos 1,8 kg. Para os prematuros extremos, vai depender mais ainda. Entre estes, os casos menos complicados saem entre 40 e 60 dias, e os mais complicados ficam o quanto precisar. 
+            </p>
+        </div>
+    </div>    
+</body>
+</html>
+
+<script>
+
+
+    function calcular() {
+ 
+        var qtdDias = Number(in_dias.value)
+        var custo = 3369
+        var profissionais = 430.6 + custo
+        //227,3+140,9+62,4 = 430,4
+        var total = profissionais * qtdDias
+
+        div_mensagem.innerHTML = '';
+
+        //total = 8 *((42.80 * 3) + 34 + 25.90) * qtdDias;
+
+        div_mensagem.innerHTML = `<br>Caso o bebê não fosse internado e passasse ${qtdDias} dias lá, você economizaria cerca de R$${total.toFixed(2)}`;
+    }
+
+</script>

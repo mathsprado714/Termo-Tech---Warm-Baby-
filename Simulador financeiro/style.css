@@ -1,0 +1,163 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+
+.header{
+    padding: 15px;
+    border-bottom: 2px solid  rgb(121, 173, 220);
+    border-radius: 0 0 15px 15px;   
+    background-color: rgba(121, 173, 220, 0.6);
+    width: 100%;
+}
+
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items:center; 
+    
+}
+
+
+.nomeEmpresa{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-right: 30%;
+}
+
+.menu{
+    display: flex;
+    list-style:none;
+}
+
+.menu > li{
+    white-space: nowrap; /*para impedir a quebra de linha */
+    margin: 0 10% 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.buttonLogin{
+    color:#fff;
+    background-color: #4083C0;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    width: min-content;
+    padding: 20% 40% 20%;
+    font-size: 1.1rem;
+}
+
+
+
+.geral{
+    display: flex;
+    margin: 4% 0% 0% 0%; 
+}
+
+
+.informacoes{
+    margin:0% 1% 0;
+    width: 30vw;
+    height: min-content;
+    padding: 2%;
+    background-color: rgba(21, 113, 194, 0.8);
+    color:#fff;
+    border: #fff solid 2px;
+    border-radius: 10px;
+    line-height: 2rem;
+}
+
+p{
+    text-align: justify;
+}
+
+
+.corpo{
+    width: 52vw;
+    height: min-content;
+    border: 2px solid #000;
+    border-radius:10px;
+    text-align:center;
+    background-color: #C7DDFf;
+}
+
+
+.titulo{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: 100;
+}
+
+
+
+.subtitulo{
+    font-size: 18;
+    font-weight: 500;
+}
+
+input{
+    border: 2px solid #2567a1;
+    border-radius: 5px;
+    height: 2.5vh;
+}
+
+.calcular{
+    border: 2px solid #79ADDC;
+    border-radius: 5px;
+    background-color: #fff;
+    width:min-content;
+    height: min-content;
+    padding: 1%;
+    transition: 250ms;
+}
+
+.calcular:hover{
+    transition: 250ms;
+    background-color: #79ADCC;
+    border-color: #000;
+}
+
+.div_mensagem{
+    color: rgb(3, 101, 187);
+}
+
+hr{
+    border-color: #000;
+    margin: 2% 0 2%;
+}
+
+.dados > li{
+    list-style: none;
+    padding-left: 2%;
+    text-align: left;
+    line-height: 2rem;
+}
+
+.informacoes2{
+    margin:0% 1% 0;
+    width: 30vw;    
+    height: min-content;
+    padding: 2%;
+    display:inline;
+    float: left;
+    background-color: rgba(21, 113, 194, 0.8);
+    color:#fff;
+    border: #fff solid 2px;
+    border-radius: 10px;
+    line-height: 2rem;
+}
+
+
+
+
+
+
